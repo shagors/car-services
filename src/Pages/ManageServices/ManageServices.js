@@ -7,7 +7,7 @@ const ManageServices = () => {
     const handleDelete = id => {
         const proceed = window.confirm('Are YOu sure ?');
         if(proceed){
-            const url = `http://localhost:5000/service/${id}`;
+            const url = `https://frozen-temple-47815.herokuapp.com/service/${id}`;
             fetch(url, {
                 method: 'DELETE'
             })
